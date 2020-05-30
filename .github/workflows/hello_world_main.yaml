@@ -32,3 +32,5 @@ jobs:
       run: surge ./ bootcamp_helloword_sao.surge.sh --token ${{secrets.HW_TOKEN}}
     - name: create 200.html
       run: echo '<h1>Hello, catch all</h1>' > 200.html
+    - name: run deploy
+      run: surge
