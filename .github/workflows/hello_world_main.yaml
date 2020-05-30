@@ -29,4 +29,4 @@ jobs:
     - name: Install Surge
       run: npm install -g surge
     - name: Run Surge
-      run: surge ./ bootcamp_helloword_sao.surge.sh
+      run: surge ./ bootcamp_helloword_sao.surge.sh --token ${{secrets.HW_TOKEN}}
